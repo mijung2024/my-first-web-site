@@ -3,38 +3,8 @@
 <head>
   <title>WEB - CSS</title>
   <meta charset="utf-8">
-
-  <script>
-  function linksSetColor(color){
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i< alist.length){
-        alist[i].style.color = color;
-        i+=1;
-      }
-    }
-    function bodySetColor(color){
-      documnet.querySelector('body').style.color = color;
-    }
-    function bodySetBakcgroundColor(color){
-      document.querySelector('body').style.backgroundColor = color;
-    }
-
-  function nightDayHandler(self){
-    var target = document.querySelector('body');
-    if (self.value==='night'){
-      bodySetBakcgroundColor('black');
-      bodySetColor('white');
-      self.value='day';
-      setColor('powderblue');
-      } else{
-      bodySetBakcgroundColor('white');
-      bodySetColor('white');
-      self.value='night';
-      setColor('blue');
-      }
-  }
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src = "color.js"> </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7H4G6T2Z9"></script>
     <script>
@@ -49,7 +19,7 @@
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <input id = "night_day" type = "button" value = "night" onclick = "
+  <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);
   ">
 
